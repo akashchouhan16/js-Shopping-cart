@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <title>My Shopping Cart</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="display-4 text-center">My <span class="text-danger">Shopping</span> List<i class="fas fa-shopping-cart"></i></h1>
+        <form id="cart-form">
+            <div class="form-group">
+                <label for="Item">Item</label>
+                <input type="text" id="Item" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="Price">Price</label>
+                <input type="text" id="Price" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="ItemCode">ItemCode#</label>
+                <input type="text" id="ItemCode" class="form-control">
+            </div>
+            <input type="submit" value="Add Item" class="btn btn-primary btn-block">
+        </form>
+        <table class="table table-striped mt-5">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>ItemCode#</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="cart-list"></tbody>
+        </table>
+        </div>
+        
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
